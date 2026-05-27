@@ -7,9 +7,9 @@
 
 | Campo | Dato |
 |-------|------|
-| **Nombre y Apellido** | |
-| **Legajo** | |
-| **Correo electrónico** | |
+| **Nombre y Apellido** | Anna Luz Serena |
+| **Legajo** | 34031 |
+| **Correo electrónico** | annaluzserena@protonmail.com |
 
 ---
 
