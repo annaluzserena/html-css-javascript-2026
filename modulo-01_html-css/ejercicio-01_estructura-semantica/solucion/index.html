@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
       content="Artículo de Tecnología sobre el Open Source y su impacto en la industria"
-    />
+    >
     <title>Blog de tecnología</title>
   </head>
   <body>
     <header>
-      <img src="logo_blog_tecnologia.svg" alt="Logo del blog de tecnología" />
+      <img src="logo_blog_tecnologia.svg" alt="Logo del blog de tecnología">
       <nav>
         <a href="#Articulos">Artículos</a>
         <a href="">Comentarios</a>
@@ -20,13 +20,20 @@
       </nav>
     </header>
     <main>
-      <section id="Articulos">
-        <article>
+      <div id="Articulos">
+        <article itemscope itemtype="https://schema.org/BlogPosting">
           <header>
             <h1>Porqué el open source cambió la industria tech</h1>
             <time datetime="2026-05-28T17:43:00">28/05/2026</time>
-            <meta name="author" content="Antonio Mamerto Gil Núñez" />
-            <meta name="category" content="Open Source" />
+            <address
+              rel="author"
+              itemprop="author"
+              itemscope
+              itemtype="https://schema.org/Person"
+            >
+              <p itemprop="name">Antonio Mamerto Gil Núñez</p>
+            </address>
+            <span rel="category">Open Source</span>
           </header>
           <blockquote
             cite="https://www.gnu.org/philosophy/free-software-for-freedom.html"
@@ -58,8 +65,13 @@
               Valley para dispersarse por todo el mundo.
             </p>
             <figure>
-                <img src="open-source.jpg" alt="Persona sentada en una computadora en medio de la nada">
-                <figcaption>Persona sentada en una computadora en medio de la nada</figcaption>
+              <img
+                src="open-source.jpg"
+                alt="Persona sentada en una computadora en medio de la nada"
+              >
+              <figcaption>
+                Persona sentada en una computadora en medio de la nada
+              </figcaption>
             </figure>
           </section>
           <section>
@@ -140,7 +152,40 @@
             </p>
           </section>
         </article>
-      </section>
+      </div>
     </main>
+    <footer>
+      <div>
+        <img src="logo_blog_tecnologia.svg" alt="Logo del blog de tecnología">
+        <p>
+          Análisis en profundidad, tutoriales y perspectivas sobre desarrollo de
+          software, inteligencia artificial y el futuro de la tecnología.
+        </p>
+        <section>
+          <h3>EXPLORAR</h3>
+          <ul>
+            <li>
+              <a href="#">Inteligencia Artificial</a>
+            </li>
+            <li>
+              <a href="#">Desarrollo Web</a>
+            </li>
+            <li>
+              <a href="#">Mobile</a>
+            </li>
+            <li>
+              <a href="#">Cloud & DevOps</a>
+            </li>
+            <li>
+              <a href="#">Ciberseguridad</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <hr>
+      <div>
+        <p>© 2026 - Todos los derechos reservados</p>
+      </div>
+    </footer>
   </body>
 </html>
