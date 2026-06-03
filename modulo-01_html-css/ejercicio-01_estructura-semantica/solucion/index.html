@@ -26,27 +26,27 @@
       <div id="Articulos">
         <article itemscope itemtype="https://schema.org/BlogPosting">
           <header>
-            <h1>Porqué el open source cambió la industria tech</h1>
-            <time datetime="2026-05-28T17:43:00">28/05/2026</time>
+            <h1 itemprop="headline">Porqué el open source cambió la industria tech</h1>
+            <time  itemprop="datePublished" datetime="2026-05-28T17:43:00">28/05/2026</time>
             <address
-              rel="author"
               itemprop="author"
               itemscope
               itemtype="https://schema.org/Person"
             >
               <p itemprop="name">Antonio Mamerto Gil Núñez</p>
             </address>
-            <span rel="category" itemprop="category">Open Source</span>
+            <span rel="category" itemprop="articleSection">Open Source</span>
           </header>
           <blockquote
             cite="https://www.gnu.org/philosophy/free-software-for-freedom.html"
+            itemscope itemtype="https://schema.org/Quotation"
           >
-            <p>
+            <p itemprop="text">
               "El software libre es una cuestión de libertad, no de precio. Para
               entender el concepto, deberías pensar en 'libre' como en 'libre
               expresión', no como en 'cerveza gratis'."
             </p>
-            <p>Richard M. Stallman, fundador del proyecto GNU</p>
+            <p itemprop="creator">Richard M. Stallman, fundador del proyecto GNU</p>
           </blockquote>
           <section>
             <h2>La democratización del conocimiento técnico</h2>
@@ -67,12 +67,13 @@
               talento técnico global, que dejó de estar concentrado en Silicon
               Valley para dispersarse por todo el mundo.
             </p>
-            <figure>
+            <figure itemscope itemtype="https://schema.org/ImageObject">
               <img
                 src="open-source.jpg"
                 alt="Persona sentada en una computadora en medio de la nada"
+                itemprop="contentUrl"
               />
-              <figcaption>
+              <figcaption itemprop="caption">
                 Persona sentada en una computadora en medio de la nada
               </figcaption>
             </figure>
@@ -156,64 +157,68 @@
           </section>
           <section id="Comentarios">
             <h2>Comentarios</h2>
-            <div>
-              <p>
+            <div itemscope itemtype="https://schema.org/Comment" itemprop="comment">
+              <p itemprop="text">
                 Muy buen análisis. Lo que más me resonó es el punto sobre la
                 democratización del acceso: antes solo las grandes empresas
                 podían permitirse infraestructura de calidad. Linux, Git,
                 Kubernetes... cambiaron eso por completo. ¿Piensan cubrir
                 también el impacto en startups de países emergentes?
               </p>
-              <address>
+              <address itemprop="author">
                 Escrito por
                 <a href="mailto:maria@ejemplo.com">María Rodríguez</a>
                 Buenos Aires, Argentina
               </address>
+              <time itemprop="dateCreated" datetime="2026-06-01T00:30:00">01/06/2026</time>
             </div>
-            <div>
-              <p>
+            <div itemscope itemtype="https://schema.org/Comment" itemprop="comment">
+              <p itemprop="text">
                 El artículo da en el clavo cuando habla del cambio cultural. No
                 fue solo el código libre lo que transformó la industria, sino la
                 mentalidad de compartir y construir sobre el trabajo de otros.
                 Eso rompió silos que existían hace décadas en el software
                 empresarial.
               </p>
-              <address>
+              <address itemprop="author">
                 Escrito por
                 <a href="mailto:jorge@ejemplo.com">Jorge López</a>
                 Mendoza, Argentina
               </address>
+              <time itemprop="dateCreated" datetime="2026-06-01T00:30:00">01/06/2026</time>
             </div>
-            <div>
-              <p>
+            <div itemscope itemtype="https://schema.org/Comment" itemprop="comment">
+              <p itemprop="text">
                 Viví este cambio de primera mano. Cuando empecé en el rubro,
                 migrar a soluciones open source era visto con desconfianza por
                 los clientes. Hoy es exactamente al revés: te preguntan por qué
                 NO usás open source. El artículo captura bien ese giro de 180
                 grados.
               </p>
-              <address>
+              <address itemprop="author">
                 Escrito por
                 <a href="mailto:ana@ejemplo.com">Ana Suárez</a>
                 Río Negro, Argentina
               </address>
+              <time itemprop="dateCreated" datetime="2026-06-01T00:30:00">01/06/2026</time>
             </div>
-            <div>
-              <p>
+            <div itemscope itemtype="https://schema.org/Comment" itemprop="comment">
+              <p itemprop="text">
                 Me parece interesante pero creo que falta matizar el rol de las
                 grandes corporaciones. Google, Meta y Microsoft contribuyen
                 enormemente al open source, sí, pero también tienen incentivos
                 propios que a veces chocan con los de la comunidad. ¿Es ese
                 poder concentrado un riesgo para el ecosistema?
               </p>
-              <address>
+              <address itemprop="author">
                 Escrito por
                 <a href="mailto:diego@ejemplo.com">Diego Marconi</a>
                 San Juan, Argentina
               </address>
+              <time itemprop="dateCreated" datetime="2026-06-01T00:30:00">01/06/2026</time>
             </div>
-            <div>
-              <p>
+            <div itemscope itemtype="https://schema.org/Comment" itemprop="comment">
+              <p itemprop="text">
                 Lo comparto con mi equipo como lectura obligatoria. Estamos
                 evaluando nuestra estrategia de stack tecnológico y este
                 artículo pone en perspectiva histórica algo que muchas veces
@@ -221,11 +226,12 @@
                 herramientas maduras y gratuitas es consecuencia directa de
                 décadas de open source.
               </p>
-              <address>
+              <address itemprop="author">
                 Escrito por
                 <a href="mailto:laura@ejemplo.com">Laura Pérez</a>
                 Buenos Aires, Argentina
               </address>
+              <time itemprop="dateCreated" datetime="2026-06-01T00:30:00">01/06/2026</time>
             </div>
           </section>
         </article>
