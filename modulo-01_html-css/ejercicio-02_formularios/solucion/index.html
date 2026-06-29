@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <img src="logo_blog_tecnologia.svg" alt="Logo del blog de tecnología" />
+      <nav>
+        <a href="">Artículos</a>
+        <a href="">Comentarios</a>
+        <a href="#Contacto">Contacto</a>
+        <a href="">Sobre Nosotros</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Contactanos</h1>
+      <h2>Dejanos tu mensaje</h2>
+      <form action="/" method="POST">
+        <fieldset>
+          <legend>Datos personales:</legend>
+          <label class="required-mark" for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            required
+            aria-required="true"
+            aria-describedby="error-nombre"
+          />
+          <span class="error-message" id="error-nombre"
+            >El nombre no puede estar vacío.</span
+          >
+          <label class="required-mark" for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            aria-required="true"
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+            aria-describedby="error-email"
+          />
+          <span class="error-message" id="error-email"
+            >El email no debe estar vacío y debe ser válido.</span
+          >
+          <label for="tel">Teléfono:</label>
+          <input
+            type="tel"
+            id="tel"
+            pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$"
+            aria-describedby="error-tel"
+          />
+          <span class="error-message" id="error-tel"
+            >El teléfono debe ser válido.</span
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Consulta:</legend>
+          <label class="required-mark" for="select-motivo">Motivo:</label>
+          <select
+            id="select-motivo"
+            required
+            aria-required="true"
+            aria-describedby="error-motivo"
+          >
+            <option value="">Seleccioná un motivo</option>
+            <option value="consulta">Consulta</option>
+            <option value="presupuesto">Presupuesto</option>
+            <option value="reclamo">Reclamo</option>
+          </select>
+          <span class="error-message" id="error-motivo"
+            >Debe seleccionar un motivo.</span
+          >
+          <label class="required-mark" for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            required
+            aria-required="true"
+            aria-describedby="error-mensaje"
+          ></textarea>
+          <span class="error-message" id="error-mensaje"
+            >El mensaje no puede estar vacío.</span
+          >
+        </fieldset>
+        <input
+          type="checkbox"
+          id="terminos"
+          required
+          aria-required="true"
+          aria-describedby="error-terminos"
+        />
+        <label class="required-mark" for="terminos">Acepto los términos</label>
+        <span class="error-message" id="error-terminos"
+          >No ha aceptado los términos.</span
+        >
+        <input type="radio" id="boton-consulta" />
+        <label for="boton-consulta">Consulta</label>
+        <input type="radio" id="boton-sugerencia" />
+        <label for="boton-sugerencia">Sugerencia</label>
+        <input type="submit" id="enviar" value="Enviar"/>
+        <label for="enviar">Enviar</label>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <img src="logo_blog_tecnologia.svg" alt="Logo del blog de tecnología" />
+        <p>
+          Análisis en profundidad, tutoriales y perspectivas sobre desarrollo de
+          software, inteligencia artificial y el futuro de la tecnología.
+        </p>
+        <section>
+          <h3>EXPLORAR</h3>
+          <ul>
+            <li>
+              <a href="#">Inteligencia Artificial</a>
+            </li>
+            <li>
+              <a href="#">Desarrollo Web</a>
+            </li>
+            <li>
+              <a href="#">Mobile</a>
+            </li>
+            <li>
+              <a href="#">Cloud & DevOps</a>
+            </li>
+            <li>
+              <a href="#">Ciberseguridad</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <hr />
+      <div>
+        <p>© 2026 - Todos los derechos reservados</p>
+      </div>
+    </footer>
+    <!-- La diferencia entre aria-required y required es: que aria-required sirve para que tecnologías de asistencia puedan avisar a personas con discapacidad que el input es mandatorio, pero no valida el input ni previene que el formulario sea enviado como si lo hace el atributo required -->
+  </body>
+</html>
